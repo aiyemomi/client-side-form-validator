@@ -1,0 +1,219 @@
+/* changing default styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Arvo', sans-serif;
+}
+.container{
+    display: flex;
+    min-height: 100vh;
+}
+
+/* style rules for content section */
+
+.logo{
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 45px;
+    display: flex;
+}
+.content{
+    background-color: #FFD155;
+    width: 55%;
+    padding: 20px 10px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.image{
+    background-image: url("./images/organize.webp");
+    width: 100%;
+    height: 100%;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.text{
+color: white;
+  position: relative;
+  text-align: center;
+  top: 550px;
+}
+/* .s-bubble-div1{
+    text-align: center;
+    top: 30px;
+    position: relative;
+    padding: 20px;
+    width: 140px;
+    left: 140px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+
+} */
+
+/* style rules fo social section */
+.btn{
+    margin: 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+.btn-1, .btn-2{
+    width: 100%;
+    padding: 8px 5px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #c4c4c4;
+    border-radius: 8px;
+    box-shadow:2px 2px 5px rgba(0,0,0,0.1);
+}
+.btn-2{
+    /* background-color: #4f70b5 ; */
+    /* color: white; */
+}
+.or{
+text-align: center;
+}
+.question{
+    font-size: 15px;
+}
+
+.question > span{
+
+margin-top: 15px;
+color: #FFD155;
+font-weight: 500;
+font-size: 20px;
+
+}
+.question > h5{
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+/* style rules for form section */
+
+
+form{
+width: 45%;
+box-shadow:2px 2px 5px rgba(0,0,0,0.1);
+padding: 50px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.title{
+    /* font-family: 'Montserrat', sans-serif; */
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+form > div > input{
+width: 100%;
+border-radius: 8px;
+height: 40px;
+outline: none;
+border: 2px solid grey;
+padding: 0 25px;
+box-shadow:2px 2px 4px rgba(0,0,0,0.1);
+}
+
+label{
+display: block;
+margin-bottom: 5px;
+}
+/* changing icon styles */
+
+form > div{
+    position: relative;
+    margin-bottom: 15px;
+}
+
+input:focus{
+    border: 2px solid #FFD155;
+}
+
+::-webkit-input-placeholder {
+   padding: 20px;
+  }
+
+form > div > i{
+    position: absolute;
+    padding: 10px;
+}
+
+.fa-circle-exclamation, .fa-circle-check{
+right: 0;
+opacity: 0;
+}
+.fa-circle-exclamation,
+.error
+{
+    color: red;
+}
+.fa-circle-check{
+    color: green;
+    }
+.error{
+    font-size: 14.5px;
+    margin-top: 5px;
+}
+
+/* style rules for button */
+button{
+    font-family: 'Arvo', sans-serif;
+    margin-top: 15px;
+    width: 100%;
+    height: 45px;
+    background-color: black;
+    /* background-color: #FFD155; */
+    /* background-color: #f2796e; */
+    border-radius: 8px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow:2px 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.1s ease;
+}
+button:hover{
+    opacity: 0.8;
+}
+
+/* Media Queries */
+@media (max-width: 900px){
+    .s-bubble-div1{
+        color: red;
+        visibility: hidden;
+    }
+
+.container{
+    flex-direction: column;
+}
+form,.content{
+    width: 100%;
+}
+.image{
+    background-image: url("./images/organize.webp");
+    width: 100%;
+    height: 70vh !important;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 350px 300px;
+}
+.btn{
+    flex-direction: column;
+}
+
+}
+@media (max-width: 425px){
+    form{
+        padding: 20px;
+    }   
+}

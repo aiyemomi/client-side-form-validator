@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cdef9145b8.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=League+Script&family=Nothing+You+Could+Do&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="image">
+                <div class="logo">
+                    <img src="images/o3.png" alt=""> rganize
+                </div>
+                <div class="text">
+                    Start for free & get <br> organized today!
+                </div>
+            </div>
+        </div>
+        <form action="" id="form">
+            <div class="social">
+                <div class="title">
+                    Get Started
+                </div>
+                <div class="question">
+                    <h5> Already have an account?</h5> <br>
+                    <span> Sign In</span>
+                </div>
+                <div class="btn">
+                    <div class="btn-1">
+                        <img src="https://img.icons8.com/color/30/null/google-logo.png" />
+                        sign up
+                    </div>
+                    <div class="btn-2">
+                        <img src="https://img.icons8.com/ios-glyphs/30/null/facebook-new.png" />
+                        sign up
+                    </div>
+                </div>
+                <div class="or">Or</div>
+            </div>
+            <div>
+                <label for="username">User Name</label>
+                <i class="fa-regular fa-user"></i>
+                <input class="" type="text" name="username" id="username" placeholder="Pimp Slickback" value="">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <i class="fa-regular fa-circle-check"></i>
+                <div class="error"></div>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <i class="fa-regular fa-envelope"></i>
+                <input class="" type="email" name="email" id="email" placeholder="abc@gmail.com" value="">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <i class="fa-regular fa-circle-check"></i>
+                <div class="error"></div>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <i class="fa-solid fa-lock"></i>
+                <input class="" type="password" name="password" id="password" placeholder="Password here" value="">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <i class="fa-regular fa-circle-check"></i>
+                <div class="error"></div>
+            </div>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
